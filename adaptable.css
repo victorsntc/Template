@@ -1,0 +1,253 @@
+/* MENU PRINCIPAL */
+span.btn-menu-adaptable {
+	display: inline-block;
+	width: 61px;
+	height: 61px;
+	background-image: url(../images/boton_menu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	cursor: pointer;
+	margin: 0px 10px 0 0;
+	position: fixed;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	left: 0;
+	top: 0;
+	z-index: 100002;
+}
+
+span.btn-menu-adaptable:hover {
+	background-position: center bottom;
+}
+
+.contenedor-btn-menu-adaptable {
+	width: 100%;
+	height: 61px;
+	padding: 0;
+	clear: both;
+	background: #F3F4F4;
+	border-bottom: 1px solid #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100002;
+}
+
+.contenedor-btn-menu-adaptable .logo_alt {
+	height: 40px;
+	width: auto;
+	float: left;
+	margin: 10px 15px 0 85px;
+}
+
+.menu_cabecera.menu-adaptable-desplegable {
+	width: 100%;
+	position: fixed;
+	top: 61px;
+	left: 0px;
+	z-index: 200000;
+	height: 96%;
+	background: #fafafa;
+	margin: 0px;
+	padding: 0px 0px 50px 0px;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li {
+	background: #fafafa;
+	border-bottom: 1px solid #c9c9c9;
+	float: none;
+	padding: 0;
+	margin: 0;
+	float: none;
+	box-sizing: border-box;
+	height: auto;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li>a {
+	display: block;
+	padding: 30px 0px 30px 50px;
+	margin: 0;
+	font-size: 16px;
+	text-align: left;
+	color: #5b6064;
+	float: none;
+	box-sizing: border-box;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li a.seleccionado {
+	color: #20BDAA !important;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li:hover {
+	
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li:hover>a {
+	
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li ul.subcat {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 0;
+	border-radius: 0;
+	width: 100%;
+}
+
+.menu_cabecera.menu_cabecera ul.subcat:before {
+	display: none;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li .subcat li {
+	background: none;
+	border-bottom: 1px solid #c9c9c9;
+	padding: 0;
+	visibility: visible;
+	width: 100%;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li .subcat li:last-child {
+	border-bottom: none;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li .subcat li a {
+	width: 100%;
+	display: block;
+	padding: 15px 0px 13px 30px;
+	font-size: 14px;
+	text-align: left;
+	color: #5b6064;
+	background: none;
+}
+
+.menu_cabecera.menu-adaptable-desplegable>li .subcat li:hover a {
+	background-color: #f4f4f4;
+}
+
+.menu_cabecera.menu-adaptable-desplegable.active>li:last-child {
+	padding: 0px 0px 50px 0px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------- ESTRUCTURA  ----------------------------*/
+/*----------------------------------------------------------------*/
+@media screen and (max-width:1050px) {
+	html {
+		min-width: 100%;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.centrador, .contenido {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.menu_cabecera>li>a {
+		display: block;
+		font-size: 16px;
+	}
+	#slider_banner li .texto {
+		width: 70%;
+	}
+	.destacado {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.marcas_portada li {
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 15%;
+	}
+	.marcas_portada li img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:999px) {
+	header .links {
+		width: 100%;
+		padding-top: 60px;
+	}
+	header .main_logo {
+		display: none;
+	}
+	header .main_menu {
+		display: none;
+	}
+	header {
+		height: 140px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:810px) {
+}
+
+@media screen and (max-width:600px) {
+	.campos_formulario {
+		float: left;
+		width: 100%;
+		margin-top: 30px;
+	}
+	.descrip_form {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:580px) {
+	#slider_banner li .texto {
+		width: 90%;
+	}
+	#slider_banner li .texto h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.marcas_portada li {
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 21%;
+	}
+}
+
+@media
+screen
+and
+(max-width:500px)
+{
+header .links .botones li {
+	float: right;
+	vertical-align: top;
+	position: relative;
+	width: 150px;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+header .links .botones li:first-child {
+	margin-left: 5px;
+}
+
+header .links .botones li:last-child {
+	width: 140px;
+}
+
+footer {
+	font-size: 10px;
+}
+
+}
+@media screen and (max-width:450px) {
+	ul.lista li {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	ul.lista .foto {
+		height: auto;
+	}
+}
